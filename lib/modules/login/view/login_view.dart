@@ -38,7 +38,14 @@ class LoginView extends GetView<LoginViewModel>{
             
             decoration: BoxDecoration(
                 color: Colors.white,
-              borderRadius: BorderRadius.circular(20)
+              border: Border(
+                top: BorderSide(
+                ),
+              ),
+              borderRadius: const BorderRadius.only(
+                topLeft: Radius.circular(20),
+                topRight: Radius.circular(20),
+              ),
             ),
             child: Column(
               children: [
